@@ -5,8 +5,10 @@
     <classes>
       <class name="com.dropbox.qa.testcases.LoginPageTest">
         <methods>
+          <include name="loginTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="logoVisibilityTest"/>
         </methods>
       </class> <!-- com.dropbox.qa.testcases.LoginPageTest -->
       <class name="com.dropbox.qa.testcases.HomePageTest">

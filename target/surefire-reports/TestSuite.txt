@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 351.423 sec <<< FAILURE!
-verifyHomePageTitleTest(com.dropbox.qa.testcases.HomePageTest)  Time elapsed: 0.497 sec  <<< FAILURE!
+Tests run: 8, Failures: 5, Errors: 0, Skipped: 2, Time elapsed: 215.637 sec <<< FAILURE!
+verifyHomePageTitleTest(com.dropbox.qa.testcases.HomePageTest)  Time elapsed: 0.16 sec  <<< FAILURE!
 java.lang.AssertionError: Home Page title not matched expected [Dropbox] but found [input]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
@@ -10,15 +10,15 @@ java.lang.AssertionError: Home Page title not matched expected [Dropbox] but fou
 	at org.testng.Assert.assertEquals(Assert.java:176)
 	at com.dropbox.qa.testcases.HomePageTest.verifyHomePageTitleTest(HomePageTest.java:36)
 
-verifyHomePageHeaderTest(com.dropbox.qa.testcases.HomePageTest)  Time elapsed: 60.185 sec  <<< FAILURE!
+verifyHomePageHeaderTest(com.dropbox.qa.testcases.HomePageTest)  Time elapsed: 62.427 sec  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(), 'Home')]"}
   (Session info: chrome=85.0.4183.83)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-EFHT2T6', ip: '192.168.43.201', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_60'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:58961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 911f8d5851ad9dec256cbb1a5a68acee
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51074}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8f592cba5e5559d4a86a1c96fc44fe66
 *** Element info: {Using=xpath, value=//h1[contains(text(), 'Home')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -40,16 +40,16 @@ Session ID: 911f8d5851ad9dec256cbb1a5a68acee
 	at com.dropbox.qa.pages.HomePage.homePageHeader(HomePage.java:29)
 	at com.dropbox.qa.testcases.HomePageTest.verifyHomePageHeaderTest(HomePageTest.java:41)
 
-clickOnSearchFieldTest(com.dropbox.qa.testcases.HomePageTest)  Time elapsed: 60.098 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Search']"}
+logoVisibilityTest(com.dropbox.qa.testcases.LoginPageTest)  Time elapsed: 0.008 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=85.0.4183.83)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-EFHT2T6', ip: '192.168.43.201', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_60'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59216}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 24a0046ba9a85a23436c7ea01e03a823
-*** Element info: {Using=xpath, value=//input[@placeholder='Search']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51264}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7a2bcd530eb65aabb4d265f2aefef574
+*** Element info: {Using=xpath, value=//img[contains(@class, 'dropbox-logo__glyph')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -66,7 +66,67 @@ Session ID: 24a0046ba9a85a23436c7ea01e03a823
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at com.dropbox.qa.pages.LoginPage.dropLogoVisibility(LoginPage.java:34)
+	at com.dropbox.qa.testcases.LoginPageTest.logoVisibilityTest(LoginPageTest.java:36)
+
+setUp(com.dropbox.qa.testcases.HomePageTest)  Time elapsed: 12.63 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=85.0.4183.83)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EFHT2T6', ip: '192.168.43.201', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51300}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e2697c256bf7e1a7555d2f1768c7019a
+*** Element info: {Using=name, value=login_email}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
-	at com.dropbox.qa.pages.HomePage.clickOnSearchField(HomePage.java:33)
-	at com.dropbox.qa.testcases.HomePageTest.clickOnSearchFieldTest(HomePageTest.java:47)
+	at com.dropbox.qa.pages.LoginPage.login(LoginPage.java:39)
+	at com.dropbox.qa.testcases.HomePageTest.setUp(HomePageTest.java:30)
+
+loginTest(com.dropbox.qa.testcases.LoginPageTest)  Time elapsed: 0.012 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=85.0.4183.83)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EFHT2T6', ip: '192.168.43.201', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f8bc09e1b08ecb46d3eb07653116b231
+*** Element info: {Using=name, value=login_email}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
+	at com.dropbox.qa.pages.LoginPage.login(LoginPage.java:39)
+	at com.dropbox.qa.testcases.LoginPageTest.loginTest(LoginPageTest.java:42)
 

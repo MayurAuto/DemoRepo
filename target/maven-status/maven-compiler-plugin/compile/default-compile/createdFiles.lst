@@ -1,5 +1,6 @@
 com\dropbox\qa\base\TestBase.class
-com\dropbox\qa\pages\HomePage.class
 com\qa\ExtentReportListener\ExtentReportListener.class
 com\dropbox\qa\util\TestUtil.class
 com\dropbox\qa\pages\LoginPage.class
+com\dropbox\qa\pages\SearchPage.class
+com\dropbox\qa\pages\HomePage.class
